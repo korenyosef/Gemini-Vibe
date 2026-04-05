@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Gemini Vibe",
   "version": "1.6",
-  "description": "Play games while Gemini thinks! Features: Timer, Dynamic Glow, and Variety Menu.",
+  "description": "Play games while Gemini thinks!",
   "permissions": ["storage"],
   "content_scripts": [
     {
