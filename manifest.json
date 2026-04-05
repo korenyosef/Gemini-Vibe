@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Vibe",
+  "version": "1.6",
+  "description": "Play games while Gemini thinks! Features: Timer, Dynamic Glow, and Variety Menu.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Gemini Vibe Settings",
+    "16": "icons/icon16.png",
+    "24": "icons/icon24.png",
+    "32": "icons/icon32.png"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

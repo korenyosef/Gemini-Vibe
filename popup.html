@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        width: 300px;
+        padding: 16px;
+        background: #1e1f20;
+        color: #e3e3e3;
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+      }
+      h2 {
+        margin: 0 0 15px 0;
+        font-size: 18px;
+        color: #4285f4;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .section-title {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #888;
+        margin: 15px 0 8px 0;
+        letter-spacing: 1px;
+      }
+      .game-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .game-option {
+        padding: 12px;
+        background: #2b2c2d;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid #3c4043;
+        transition: all 0.2s;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .game-option:hover {
+        background: #3c4043;
+        border-color: #4285f4;
+      }
+      .game-option.active {
+        background: #4285f4;
+        color: #fff;
+        border-color: #4285f4;
+      }
+
+      .custom-section {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #333;
+      }
+      .custom-input-group {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+      }
+      input[type="text"] {
+        flex-grow: 1;
+        background: #121212;
+        border: 1px solid #444;
+        color: #fff;
+        padding: 8px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      button#save-custom {
+        background: #4285f4;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+
+      .footer {
+        margin-top: 15px;
+        font-size: 10px;
+        opacity: 0.5;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>🎮 Gemini Vibe</h2>
+
+    <div class="section-title">Select Preset</div>
+    <div class="game-list" id="game-list"></div>
+
+    <div class="custom-section">
+      <div class="section-title">Custom Game URL</div>
+      <div class="custom-input-group">
+        <input type="text" id="custom-url" placeholder="https://..." />
+        <button id="save-custom">Set</button>
+      </div>
+    </div>
+
+    <div class="footer">Choose your favorite game below.</div>
+    <script src="popup.js"></script>
+  </body>
+</html>
